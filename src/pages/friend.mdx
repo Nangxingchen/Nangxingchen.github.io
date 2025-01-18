@@ -1,0 +1,35 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/mdx/Collapse.astro";
+import Diff from "../components/mdx/Diff.astro";
+import Error from "../components/mdx/Error.astro";
+import Info from "../components/mdx/Info.astro";
+import Kbd from "../components/mdx/Kbd.astro";
+import Success from "../components/mdx/Success.astro";
+import Warning from "../components/mdx/Warning.astro";
+import TimeLine from "../components/mdx/TimeLine.astro";
+import LinkCard from "../components/mdx/LinkCard.astro";
+
+<BaseLayout title="关于我">
+  <BaseCard title="关于我">
+# 关于我
+
+---
+
+    <div class="grid grid-cols-2 gap-4">
+      <LinkCard
+        title="是小楠楠呀"
+        desc="一位普通的人"
+        url="https://nangxingchen-github-io.pages.dev/"
+        img="https://p1.qhmsg.com/dm/180_180_100/t111186045d1c76e2b36566637d.jpg"
+      />
+      <LinkCard
+        title="It's Xiao Nannan"
+        desc="An ordinary person"
+        url="https://nangxingchen-github-io.pages.dev/"
+        img="https://p1.qhmsg.com/dm/180_180_100/t111186045d1c76e2b36566637d.jpg"
+      />
+    </div>
+
+  </BaseCard>
+</BaseLayout>

@@ -1,0 +1,40 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/mdx/Collapse.astro";
+import Diff from "../components/mdx/Diff.astro";
+import Error from "../components/mdx/Error.astro";
+import Info from "../components/mdx/Info.astro";
+import Kbd from "../components/mdx/Kbd.astro";
+import Success from "../components/mdx/Success.astro";
+import Warning from "../components/mdx/Warning.astro";
+import TimeLine from "../components/mdx/TimeLine.astro";
+import LinkCard from "../components/mdx/LinkCard.astro";
+
+<BaseLayout title="关于我们/公告栏">
+  <BaseCard title="关于我们/公告栏">
+# 关于AetherTech
+
+---
+
+## AetherTech 是一个超级无敌的公司(小声)
+
+请听我开始吹: AetherTech中文名以太科技公司
+在科技飞速发展的时代浪潮中，AetherTech科技有限公司犹如一颗璀璨的星辰，闪耀在创新的天空，引领着科技变革的潮流，致力于用前沿技术点亮未来，为人类生活和社会发展创造无限可能。
+
+## 公告
+
+    <TimeLine
+
+items={[
+{ year: "2024-7-30", event: "没有成立" },
+{ year: "2024-8-1", event: "没有成立" },
+{ year: "2024-8-2", event: "有想法了" },
+{ year: "2024-8-4", event: "有想法了" },
+{ year: "2024-8-5", event: "跳过几个月" },
+{ year: "2025-1-5", event: "跳过几个月" },
+{ year: "2025-1-10", event: "单项宣布成立" },
+]}
+/>
+
+  </BaseCard>
+</BaseLayout>
