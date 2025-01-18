@@ -51,13 +51,6 @@ export const menuItems = [
         svg: "material-symbols:deployed-code-outline",
         target: "_self",
       }, // Technology category
-      {
-        id: "life",
-        text: "生活博客",
-        href: "/blog/categories/life",
-        svg: "material-symbols:deployed-code-outline",
-        target: "_self",
-      }, // Life category
     ],
   }, // Blog page with sub-items
   {
