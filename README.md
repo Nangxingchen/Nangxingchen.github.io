@@ -1,4 +1,4 @@
-# 🧊 Frosti
+# 🧊 AetherTech
 
 [![license](https://badgen.net/github/license/EveSunMaple/Frosti)](https://github.com/EveSunMaple/Frosti/blob/main/LICENSE)&nbsp;&nbsp;&nbsp;[![release](https://badgen.net/github/release/EveSunMaple/Frosti)](https://github.com/EveSunMaple/Frosti/releases)&nbsp;&nbsp;&nbsp;[![stackblitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/EveSunMaple/Frosti)
 
@@ -6,7 +6,7 @@
 A simple, elegant, and fast static blog template! 🚀 Built with Astro
 </pre>
 
-[**🖥️ Frosti Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 Chinese README**](https://github.com/EveSunMaple/Frosti/blob/main/docs/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️My Blog**](https://www.saroprock.com)
+[**🖥️ AetherTech Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 Chinese README**](https://github.com/EveSunMaple/Frosti/blob/main/docs/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️My Blog**](https://www.saroprock.com)
 
 > [!TIP]
 > It is recommended to preview this theme first
@@ -52,9 +52,9 @@ A simple, elegant, and fast static blog template! 🚀 Built with Astro
 ## ⬇️ Usage
 
 > [!IMPORTANT]
-> Frosti uses pnpm as the package manager. If you don’t have pnpm installed, please install it first.
+> AetherTech uses pnpm as the package manager. If you don’t have pnpm installed, please install it first.
 
-Use Frosti by passing the `--template` parameter to the `create astro` command!
+Use AetherTech by passing the `--template` parameter to the `create astro` command!
 
 ```sh
 pnpm create astro@latest -- --template EveSunMaple/Frosti
