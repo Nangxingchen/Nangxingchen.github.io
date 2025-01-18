@@ -6,7 +6,7 @@ export const SITE_LANG = "en";
 export const SITE_TAB = "AetherTech";
 export const SITE_TITLE = "AetherTech 🧊";
 export const SITE_DESCRIPTION = "A blog template";
-export const DATE_FORMAT = "ddd MMM DD YYYY";
+export const DATE_FORMAT = "YYYY DD MMM ddd";
 
 // User profile information
 export const USER_NAME = "EveSunMaple";
@@ -55,7 +55,7 @@ export const menuItems = [
         id: "life",
         text: "生活博客",
         href: "/blog/categories/life",
-        svg: "material-symbols:earthquake-rounded",
+        svg: "material-symbols:deployed-code-outline",
         target: "_self",
       }, // Life category
     ],
