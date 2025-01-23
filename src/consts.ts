@@ -36,7 +36,7 @@ export const menuItems = [
     href: "/blog",
     svg: "material-symbols:ink-pen-outline-rounded",
     target: "_self",
-   // 所有博客
+    // 所有博客
     
   }, // Blog page with sub-items
   {
