@@ -31,20 +31,13 @@ export const menuItems = [
   { id: "home", text: "主页", href: "/", svg: "material-symbols:home-outline-rounded", target: "_self" }, // Home page
   { id: "about", text: "关于", href: "/about", svg: "material-symbols:info-outline-rounded", target: "_self" }, // About page
   {
-    id: "blog",
-    text: "博客",
+    id: "all",
+    text: "所有博客",
     href: "/blog",
-    svg: "material-symbols:book-2-outline-rounded",
+    svg: "material-symbols:ink-pen-outline-rounded",
     target: "_self",
-    subItems: [
-      {
-        id: "all",
-        text: "所有博客",
-        href: "/blog",
-        svg: "material-symbols:ink-pen-outline-rounded",
-        target: "_self",
-      }, // 所有博客
-    ],
+   // 所有博客
+    
   }, // Blog page with sub-items
   {
     id: "project",
