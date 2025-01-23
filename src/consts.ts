@@ -44,13 +44,6 @@ export const menuItems = [
         svg: "material-symbols:ink-pen-outline-rounded",
         target: "_self",
       }, // 所有博客
-      {
-        id: "tech",
-        text: "技术博客",
-        href: "/blog/categories/tech",
-        svg: "material-symbols:deployed-code-outline",
-        target: "_self",
-      }, // Technology category
     ],
   }, // Blog page with sub-items
   {
