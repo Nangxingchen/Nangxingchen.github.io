@@ -7,7 +7,28 @@ import { SERVER_URL } from "../consts";
 <div class="comment">
   <div id="waline-comment-system" data-server-url={SERVER_URL}></div>
 </div>
+<script type="module" is:inline>
+  import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
 
+  const serverURL = document.getElementById("waline-comment-system").getAttribute("data-server-url");
+  init({
+    el: "#waline-comment-system",
+    serverURL : "https://mxnr42qc.api.lncldglobal.com",
+    dark: 'html[data-theme="dracula"]',
+    reaction: [
+      "/reaction/good.png",
+      "/reaction/bad.png",
+      "/reaction/happy.png",
+      "/reaction/color.png",
+      "/reaction/confuse.png",
+      "/reaction/heart.png",
+      "/reaction/rocket.png",
+      "/reaction/eyes.png",
+    ],
+    emoji: false,
+    search: false,
+  });
+</script>
 
 <script src="https://giscus.app/client.js"
         data-repo="Nangxingchen/Nangxingchen.github.io"
