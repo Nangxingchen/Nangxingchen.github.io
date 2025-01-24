@@ -48,14 +48,14 @@ export const menuItems = [
         id: "life",
         text: "生活博客",
         href: "/blog/categories/life",
-        svg: "material-symbols:hotel-outline",
+        svg: "material-symbols:deployed-code-outline",
         target: "_self", // Life category
       }, // 生活分类 
       {
         id: "technology",
         text: "技术博客",
         href: "/blog/categories/technology",
-        svg: "material-symbols:code-tags-outline",
+        svg: "material-symbols:deployed-code-outline",
         target: "_self", // Technology category
       }, // 技术分类 
     ],
