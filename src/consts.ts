@@ -43,7 +43,21 @@ export const menuItems = [
         href: "/blog",
         svg: "material-symbols:ink-pen-outline-rounded",
         target: "_self",
-      }, // 所有博客 
+      },// 所有博客 
+      {
+        id: "life",
+        text: "生活博客",
+        href: "/blog/categories/life",
+        svg: "material-symbols:hotel-outline",
+        target: "_self", // Life category
+      }, // 生活分类 
+      {
+        id: "technology",
+        text: "技术博客",
+        href: "/blog/categories/technology",
+        svg: "material-symbols:code-tags-outline",
+        target: "_self", // Technology category
+      }, // 技术分类 
     ],
   }, // Blog page with sub-items
   {
