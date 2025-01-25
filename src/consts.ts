@@ -77,7 +77,7 @@ export const menuItems = [
   {
     id: "contact",
     text: "邮箱",
-    href: "mailto:contact.Nxc19075377433@outlook.com", // Contact email
+    href: "mailto:Nxc19075377433@outlook.com", // Contact email
     target: "_blank", // Open in a new tab
     svg: "material-symbols:attach-email-outline-rounded",
   },
