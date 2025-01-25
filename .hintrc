@@ -7,9 +7,24 @@
       "default",
       {
         "ignore": [
-          "backdrop-filter"
+          "backdrop-filter",
+          "color: oklch(var(--p))",
+          "color: oklch(var(--s))",
+          "background-color: oklch(var(--n))",
+          "scrollbar-width",
+          "color: oklch(var(--n))",
+          "background-color: oklch(var(--b3))",
+          "box-decoration-break"
         ]
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not chrome <= 109",
+    "not ios_saf <= 18.2",
+    "not safari <= 18.2",
+    "not samsung <= 27"
+  ]
 }
