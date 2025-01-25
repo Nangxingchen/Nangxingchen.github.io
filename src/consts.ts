@@ -69,7 +69,7 @@ export const menuItems = [
   }, // Projects page
   {
     id: "friend",
-    text: "关于我们",
+    text: "友链",
     href: "/friend",
     svg: "material-symbols:supervisor-account-outline-rounded",
     target: "_self",
