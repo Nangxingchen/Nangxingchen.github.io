@@ -10,6 +10,19 @@ tags:
   - 自由职业
   - 自由
 ---
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/mdx/Collapse.astro";
+import Diff from "../components/mdx/Diff.astro";
+import Error from "../components/mdx/Error.astro";
+import Info from "../components/mdx/Info.astro";
+import Kbd from "../components/mdx/Kbd.astro";
+import Success from "../components/mdx/Success.astro";
+import Warning from "../components/mdx/Warning.astro";
+import TimeLine from "../components/mdx/TimeLine.astro";
+import LinkCard from "../components/mdx/LinkCard.astro";
+
 # 我们开始
 
 自由职业的文章我一共分为四篇,这是第一篇主要讲述什么是自由职业,和目前我对自由职业的选择
@@ -23,8 +36,9 @@ tags:
 
 ## 文章提示
 
-文章以自行编写的文案,请勿在未授权的情况下搬运,
-当前文章内容以网上内容和自己的个人看法编写,文章仅提供参考.
+<Warning>文章以自行编写的文案,请勿在未授权的情况下搬运,
+当前文章内容以网上内容和自己的个人看法编写,文章仅提供参考.</Warning>
+
 
 ---
 ## 什么是自由职业?
