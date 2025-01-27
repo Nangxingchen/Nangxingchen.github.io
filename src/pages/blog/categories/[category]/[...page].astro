@@ -12,10 +12,10 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
 
   const all_categories = [...new Set(all_posts.flatMap((post: any) => post.data.categories || []))];
 
-  all_posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  all_posts.sort((a: { data: { pubDate: number; }; }, b: { data: { pubDate: number; }; }) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   const postsWithStats = await Promise.all(
-    all_posts.map(async (post) => {
+    all_posts.map(async (post: { render: () => PromiseLike<{ remarkPluginFrontmatter: any; }> | { remarkPluginFrontmatter: any; }; }) => {
       const { remarkPluginFrontmatter } = await post.render();
       return {
         ...post,
