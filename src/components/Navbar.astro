@@ -13,7 +13,7 @@ import { SITE_TITLE } from "../consts";
     <label class="btn btn-ghost swap swap-rotate">
       <input type="checkbox" id="menu-toggle" />
       <Icon name="mdi:menu" class="swap-off w-8 h-8" />
-      <Icon name="mdi:close" class="swap-on w-8 h-8" />
+      <Icon name="mdi:清除" class="swap-on w-8 h-8" />
     </label>
   </div>
 
@@ -65,7 +65,7 @@ import { SITE_TITLE } from "../consts";
         navbar.classList.add("-translate-y-full", "duration-500");
         navbar.classList.remove("translate-y-0");
 
-        // Close menu when hiding navbar
+        // 隐藏导航栏时关闭菜单
         if (menuToggle) {
           menuToggle.checked = false;
         }
@@ -93,7 +93,7 @@ import { SITE_TITLE } from "../consts";
     }
   });
 
-  // Close menu when clicking outside
+  // 单击外部时关闭菜单
   document.addEventListener("click", (event) => {
     const target = event.target as Node;
     if (!navbar?.contains(target) && headerMenu?.classList.contains("show")) {
@@ -102,7 +102,7 @@ import { SITE_TITLE } from "../consts";
     }
   });
 
-  // Close menu when clicking menu items
+  // 单击菜单项时关闭菜单
   const menuItems = document.querySelectorAll("#header-menu a");
   menuItems.forEach((item) => {
     item.addEventListener("click", () => {
