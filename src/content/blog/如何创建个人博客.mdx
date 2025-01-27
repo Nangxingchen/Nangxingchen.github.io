@@ -1,0 +1,180 @@
+---
+title: "如何创建个人博客"
+description: "属于自己的网站，记录自己的生活和成长"
+pubDate: "01 27 2025"
+image: /image/20426.jpg
+categories:
+  - technology
+  - 技术
+badge: Pin
+tags:
+  - 博客
+  - 个人网站
+  - 建站
+---
+
+import Collapse from "../../components/mdx/Collapse.astro";
+import Diff from "../../components/mdx/Diff.astro";
+import Error from "../../components/mdx/Error.astro";
+import Info from "../../components/mdx/Info.astro";
+import Kbd from "../../components/mdx/Kbd.astro";
+import Success from "../../components/mdx/Success.astro";
+import Warning from "../../components/mdx/Warning.astro";
+import TimeLine from "../../components/mdx/TimeLine.astro";
+import LinkCard from "../../components/mdx/LinkCard.astro";
+
+** 前言
+
+2025年，年初我创建了这个博客，记录自己的生活和成长。
+
+这个博客创建起来异常的顺利和简单，不需要服务器，只需要简单几步即可,并且全球都能访问
+
+**我觉得这并不难,如果有域名可以准备一个域名(无需备案)**
+
+---
+
+** 一.准备工作
+- **1.在[**Astro**](https://astro.build/themes/)中选择自己心仪的模版**
+- **2.安装[**nodejs**](https://nodejs.cn/)自行了解内容**
+- **3.一个[**Github**](https://github.com/)账号这是一个免费的代码托管平台**
+- **4.一个[**Cloudflare**](https://dash.cloudflare.com/)账号这是一个网站以及域名的托管平台**
+- **5.一个[**Netlify**](https://www.netlify.com/)账号(自行了解)**
+- **6.最好下载一个[**VS Code**](https://code.visualstudio.com/)方便修改和发布**
+
+---
+
+** 二.开始创建
+
+在Astro有很多的模版，其中我选择的模版是由国内哔站[EveSunMaple](https://space.bilibili.com/438392347)
+大佬制作的,进行介绍,
+Astro首页[Frosti](https://astro.build/themes/details/frosti/)
+
+![Alt text]( /image/如何创建博客/1博客.png)
+
+点击进入，我们点按钮“get started”，进入Frosti的GitHub仓库。（如打不开可在网上下载加速器[Watt Toolkit](https://steampp.net/)）
+
+![Alt text]( /image/如何创建博客/2博客.png)
+
+然后点击仓库中“Code”按钮，点击“Download ZIP”下载Frosti的源码。
+
+如果你会使用git，可以直接使用`git clone`
+
+![Alt text]( /image/如何创建博客/3博客.png)
+
+最终都会下载了一个压缩包，你可以解压到任意位置。
+
+打开解压后的代码文件夹中按Win+ R，输入`cmd`，打开命令行。
+输入代码`npm install`，等待安装完成.
+   ``` CMD
+   npm install
+   ```
+![Alt text]( /image/如何创建博客/4博客.png)
+
+等它安装完毕，没有报错，接着输入`npm run dev`，等待项目启动。
+   ``` CMD
+   npm run dev
+   ```
+![Alt text]( /image/如何创建博客/5博客.png)
+
+想要进行后续修改，我们可以使用VS Code。
+
+![Alt text]( /image/如何创建博客/6博客.png)
+
+![Alt text]( /image/如何创建博客/7博客.png)
+
+然后进行修改就可以了。如有不明白的地方可以联系本作者或项目开发者。
+
+以下是一般需要修改的文件：
+
+- `src/const.ts` 常量、配置文件
+- `src/content/blog` 博客所在的文件夹
+- `src/pages/` 页面所在的文件夹（如Home, About等等）
+- `public/profile.webp` 头像图片
+
+---
+
+** 三.上传至Github仓库
+
+还记得我开头说要有Github账号并建一个仓库不？（不记得快去看开头！）
+
+我们打开Github，点击右上角的加号，选择New repository（即第一个选项）。
+
+接下来看图操作即可：
+
+![Alt text]( /image/如何创建博客/8博客.png)
+
+仓库建好后，点击“Add file”按钮，并点“Upload files”，进入上传页面。
+
+![Alt text]( /image/如何创建博客/9博客.png)
+
+接着，选中你的文件，上传上去。稍等片刻，点击下方按钮“Commit changes”即可。
+
+![Alt text]( /image/如何创建博客/10博客.png)
+
+然后，你的代码文件就上传上去了！
+
+当然，会使用git的也可以自行使用`git push`上传。
+
+---
+
+** 四.开始部署
+
+***（1）使用Netlify
+Netlify是一个静态网站托管平台，还是Astro官方部署合作伙伴，可以很方便、快捷地将你的代码部署到网上。
+
+直接用Github登录后，会弹出一个页面。根据自己实际情况填写即可。弄好后点击“Continue to deploy”。
+
+![Alt text]( /image/如何创建博客/11博客.png)
+
+完成后，会让你连接仓库。我们选择Github。
+
+![Alt text]( /image/如何创建博客/12博客.png)
+
+随后会弹出你要链接的仓库。点击我们上传后的仓库即可。Netlify会自动检测你的仓库，并自动部署。
+
+稍等片刻，Netlify会自动部署你的网站。
+
+部署好后，Netlify会自动生成一个链接，点击即可访问你的网站。
+
+你可以在左边菜单栏中找到“Site configuration”，点“Change site name”即可更改域名。
+
+![Alt text]( /image/如何创建博客/13博客.png)
+
+***（2）使用Cloudflare
+
+同样，我们也可以用Github登录Cloudflare，(当然也可以使用邮箱创建)然后点“Workers和Pages”。
+
+![Alt text]( /image/如何创建博客/14博客.png)
+
+点击“创建”按钮后，点“Pages”跳到连接仓库的页面
+
+![Alt text]( /image/如何创建博客/15博客.png)
+
+选择放置博客代码的仓库，并点“开始设置”。
+
+![Alt text]( /image/如何创建博客/16博客.png)
+
+接下来看图操作即可：
+
+![Alt text]( /image/如何创建博客/17博客.png)
+
+稍等片刻，Cloudflare也会自动部署你的网站。
+
+如果出现下图的情况，那么恭喜你，你的博客已经部署完成了！
+
+![Alt text]( /image/如何创建博客/18博客.png)
+
+后续想要修改内容，只需要上传到Github仓库，Cloudflare和Netlify会自动检测并更新你的网站。
+
+---
+
+** 五.总结
+
+<Info>
+部分文字来源于[Astro搭建个人博客](https://www.cnblogs.com/yinph/p/18549888)
+,我单纯负责分享，希望可以帮助到大家，搭建好博客后可以参考[博客语法](https://frosti.saroprock.com/)
+,本文在这里就结束啦(✪ω✪)
+</Info>
+
+
+
