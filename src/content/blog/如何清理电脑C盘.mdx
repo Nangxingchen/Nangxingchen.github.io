@@ -1,0 +1,132 @@
+---
+title: "如何清理电脑C盘"
+description: "怎么让你的C盘焕然一新"
+pubDate: "01 31 2025"
+image: /image/如何清理电脑C盘/0清理.jpg
+categories:
+  - technology
+  - 技术
+badge: Pin 
+tags:
+  - 计算机
+  - C盘清理
+---
+
+import Collapse from "../../components/mdx/Collapse.astro";
+import Diff from "../../components/mdx/Diff.astro";
+import Error from "../../components/mdx/Error.astro";
+import Info from "../../components/mdx/Info.astro";
+import Kbd from "../../components/mdx/Kbd.astro";
+import Success from "../../components/mdx/Success.astro";
+import Warning from "../../components/mdx/Warning.astro";
+import TimeLine from "../../components/mdx/TimeLine.astro";
+import LinkCard from "../../components/mdx/LinkCard.astro";
+
+## 前言
+在电脑使用中对于硬盘内存较少的用户难免出现C盘爆红的情况，这该怎么解决呢，我看到哔站
+[超极氪](https://www.bilibili.com/video/BV1cS4y1i79B/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=43d295479fe4b25bd78774d996a536f9)
+的视频，现在就整理出来吧
+
+---
+## 文章提示
+
+<Warning>这篇文章作为其他视频的整理出重点，一部分是自己写的文案，一部分是视频中的文案，
+如有侵权请联系，文章来源，哔站[超极氪](https://www.bilibili.com/video/BV1cS4y1i79B/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=43d295479fe4b25bd78774d996a536f9)</Warning>
+
+---
+## 目录
+- **清理系统临时和缓存文件**
+- **清理系统更新后的旧文件**
+- **更改桌面路径**
+- **SpaceSniffer软件清理**
+- **Dism++软件清理**
+
+---
+
+## 清理系统临时和缓存文件
+
+1. 首先`win`**+**`R`打开运行框
+
+2. 在对话框中输入%temp%点击`确定`或者`回车`键
+
+![Alt text]( /image//如何清理电脑C盘/1清理.png)
+
+3. **此时就会弹出一个文件夹[只需要直接删除里面的文件即可]**
+
+![Alt text]( /image//如何清理电脑C盘/2清理.png)
+
+**怎么删除就不赘述了**
+
+---
+
+## 清理系统更新后的旧文件
+
+**这里主要清理系统更新后留下的文件，主要用于更新之后
+出现问题bug进行回档，根据自己的条件和技术决定是否保留**
+
+### 在win10中
+
+1. 首先打开此电脑找到`C盘`->鼠标`右键`->点击`属性`
+
+(截不到图就不演示了)
+
+2. 在弹出的窗口中找到`常规`页面(一般弹出窗口的第一个页面就是)->点击`磁盘清理选项`->
+在出现的新窗口中有一个`清理系统文件`直接点击(一般在左下角)
+
+(这里因为我的是`Win11专业工作台`版本没有这个方式，所以就不做图片演示了)
+
+3. 等待系统清算，就可以看到文件类型和占用空间，其中`Windows更新清理`就是重点清理的对象
+
+4. 勾选`Windows更新清理`(点击旁边的小方块即可)，点击下方的`确定`->点击`删除文件`即可
+
+### 在win11中
+
+**第一步与win10中的方法第一步相同**
+
+2. 在弹出的窗口中找到`常规`页面(一般弹出窗口的第一个页面就是)->点击`详细信息`
+(原`磁盘清理`)
+
+![Alt text]( /image//如何清理电脑C盘/3清理.jpg)
+
+3. 会跳转到设置内的界面,等待电脑清算->点击`临时文件`
+
+![Alt text]( /image//如何清理电脑C盘/4清理.jpg)
+
+4. 这时就会进去`临时文件`的存储情况->勾选`Windows更新清理`我这里自动勾选了->点击`删除文件`
+
+![Alt text]( /image//如何清理电脑C盘/5清理.jpg)
+
+5. 此时就会弹出提示框点击`继续`即可清理完成
+
+![Alt text]( /image//如何清理电脑C盘/6清理.jpg)
+
+**删除之后可以通过关闭自动更新解决更新文件的问题(根源上解决)**
+
+## 更改桌面路径
+
+**这里就演示更换`下载路径`其他如`桌面`,`图片`,`视频`,`音乐`，`文档`，`同理`**
+
+1. 在任意盘创建一个名为下载的空文件夹(我这里在D盘)
+
+![Alt text]( /image//如何清理电脑C盘/7清理.jpg)
+
+2.找到原下载文件夹位置->右键点击`属性`->选择上方导航栏的`位置`->点击`移动`->
+选择上一步创建的`下载的空文件夹`(如果里面有文件系统会自动移动)
+
+![Alt text]( /image//如何清理电脑C盘/8清理.jpg)
+
+## SpaceSniffer软件清理
+
+**不做教程仅推荐,一般来说打开你就会用了[下载地址](https://sourceforge.net/projects/spacesniffer/)**
+
+## Dism++软件清理
+
+**不做教程仅推荐,一般来说打开你就会用了[下载地址](https://www.xitongzhijia.net/soft/34324.html)
+,带有中文比上一个软件更加简单高效的清理**
+
+## 结语
+
+<Info>
+我单纯负责分享，希望可以帮助到大家,
+本文在这里就结束啦(✪ω✪)
+</Info>
