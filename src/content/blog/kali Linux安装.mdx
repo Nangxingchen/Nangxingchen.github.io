@@ -1,0 +1,250 @@
+---
+title: "kali Linux安装"
+description: "怎么在虚拟机中安装kali(傻瓜教程)"
+pubDate: "02 1 2025"
+image: /image/kali Linux安装/0安装.png
+categories:
+  - technology
+  - 技术
+badge: Pin
+tags:
+  - 操作系统
+  - 集成工具
+  - Linux
+---
+
+import Collapse from "../../components/mdx/Collapse.astro";
+import Diff from "../../components/mdx/Diff.astro";
+import Error from "../../components/mdx/Error.astro";
+import Info from "../../components/mdx/Info.astro";
+import Kbd from "../../components/mdx/Kbd.astro";
+import Success from "../../components/mdx/Success.astro";
+import Warning from "../../components/mdx/Warning.astro";
+import TimeLine from "../../components/mdx/TimeLine.astro";
+import LinkCard from "../../components/mdx/LinkCard.astro";
+
+## 前言
+kali是Linux分支，也是作为小白学习`渗透测试`的可视化操作系统，
+其中内置了`300+`的渗透工具，可以完成大部分基础的`渗透测试`
+
+---
+
+## 文章提示
+
+<Warning>文章以自行编写的文案,请勿在未授权的情况下搬运,
+当前文章内容以个人看法编写,文章思考和表达,仅代表个人观点
+,可能会有偏差,请勿在未授权的情况下进行渗透测试</Warning>
+
+---
+
+## 准备工作
+
+- **VMware虚拟机**
+- **kali操作系统镜像**
+
+---
+
+## 目录
+- **安装VMware虚拟机**
+  - 1. **渠道**
+  - 2. **安装**
+- **在虚拟机中安装kali**
+  - 1. **kali linux镜像下载**
+  - 2. **kali linux虚拟机创建**
+  - 3. **kali linux虚拟机安装**
+---
+
+## 安装VMware虚拟机
+
+
+### 渠道
+
+安装虚拟机一共两个渠道
+
+1. 通过搜索引擎，这里我使用[必应](https://cn.bing.com/search?q=VMware)
+
+![Alt text]( /image/kali Linux安装/1安装.png)
+
+**这里第一个搜索到的就是官网，当然也可以看看下面的其他方式下载，就不做多演示了**
+
+2. 直接官网下载：跳转到[官网](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+
+**官网可能下载速度比较慢，建议通过搜索引擎找到其他下载源**
+
+### 安装
+
+**傻瓜式安装**
+
+1. 通过上述渠道下载到.exe安装包
+
+![Alt text]( /image/kali Linux安装/4安装.png)
+
+2. 打开exe后缀的安装包
+
+![Alt text]( /image/kali Linux安装/2安装.png)
+
+3. 等待程序加载安装
+
+![Alt text]( /image/kali Linux安装/3安装.png)
+
+4. 加载好后会自动进入安装向导，点击`下一步`
+
+![Alt text]( /image/kali Linux安装/5安装.png)
+
+5. 点击下一步后，就会到这个界面首先点击`我接受许可协议中的条款`
+
+然后再点击`下一步`
+
+![Alt text]( /image/kali Linux安装/6安装.png)
+
+![Alt text]( /image/kali Linux安装/7安装.png)
+
+6. 完成后就会到这个界面，接下来可以选择`更换`默认安装位置在`C盘`，
+建议选择除了C盘以外的盘符
+
+![Alt text]( /image/kali Linux安装/8安装.png)
+
+7. 这里以修改安装位置为例，安装位置按照自己的需求选择，
+修改安装位置之后，点击`下一步`(不需要修改安装位置直接`下一步`)
+
+![Alt text]( /image/kali Linux安装/9安装.png)
+
+8. 点击下一步后就会进入，图中两个选项可不勾选，按照自己需求是否勾选，点击`下一步`
+
+![Alt text]( /image/kali Linux安装/10安装.png)
+
+9. 图中两个选项与第八步同理，继续点击下一步
+
+![Alt text]( /image/kali Linux安装/11安装.png)
+
+10. 最后一步,安装自己需求选择这里我选择`安装`，如果不想安装选择`取消`
+，如果想重新开始点击`取消`后从第一步重新开始
+
+![Alt text]( /image/kali Linux安装/12安装.png)
+
+11. 等待安装
+
+![Alt text]( /image/kali Linux安装/13安装.png)
+
+12. 最后完成安装,这里点击`许可证`
+
+![Alt text]( /image/kali Linux安装/14安装.png)
+
+13. 输入许可证，人傻钱多的话可以选择这个窗口的`立即购买`，
+我选择搜索引擎搜索出一个许可证使用
+
+![Alt text]( /image/kali Linux安装/15安装.png)
+
+14. 搜索到后，黏贴进来就好了(搜索方式 就是软件名字 + 版本 +密钥),点击`完成`
+
+![Alt text]( /image/kali Linux安装/16安装.png)
+
+15. 好了现在你成功安装进入了`VMware虚拟机`的操作页面
+
+![Alt text]( /image/kali Linux安装/17安装.png)
+
+---
+
+## 在虚拟机中安装kali
+
+### kali linux镜像下载
+官网：[kali|Linux](https://www.kali.org/get-kali/#kali-installer-images)
+
+**直接选择第一个下载**
+
+![Alt text]( /image/kali Linux安装/18安装.png)
+
+### kali linux虚拟机创建
+
+**下载好镜像后打开虚拟机，在主界面中选择第一个**
+
+![Alt text]( /image/kali Linux安装/19安装.png)
+
+![Alt text]( /image/kali Linux安装/20安装.png)
+
+1. 接下来就开始创建，这里两个选项选择`自定义(高级)`然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/21安装.png)
+
+2. 这个界面选择最新的`硬件兼容性`然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/22安装.png)
+
+3. 这里选择`稍后安装操作系统`然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/23安装.png)
+
+4. 到这里首先选择`Linux`版本选择`Debian 12.x 64-bit`然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/24安装.png)
+
+5. 这个时候第一个想一个自己喜欢的虚拟机名称，建议`见名知意`，第二个就是虚拟机的安装位置，
+默认在C盘建议使用C盘以外的，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/25安装.png)
+
+6. 关于虚拟机的处理器的配置，不要超过主机虚拟机的配置，够用就行了，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/26安装.png)
+
+7. 内存与第六步同理，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/27安装.png)
+
+8. 默认就行，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/28安装.png)
+
+9. 与第八步同理，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/29安装.png)
+
+10. 与上一步同理，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/30安装.png)
+
+11. 与上一步同理，然后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/31安装.png)
+
+12. 关于虚拟机硬盘存储大小，按照自己需求如果长期需要使用kali建议50G以上的内存，
+刚刚创建好不会占用主机内存，随着虚拟机使用慢慢占用，配置好后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/32安装.png)
+
+13. 这里记得更换安装地址为了，配置好后选择`Next`(下一步)
+
+![Alt text]( /image/kali Linux安装/33安装.png)
+
+**在第五步中我选择的文件夹是`vm/kali Linux2024`其中父级文件夹就是vm**
+
+这里我为了方面管理虚拟机在vm父级文件夹中创建了kali用于存放
+
+14. 就快好了，这里点击`自定义硬件`按图配置，这里就是安装虚拟机镜像了
+,配置好后点击`close`
+
+![Alt text]( /image/kali Linux安装/35安装.png)
+
+15. 最后再点击`Finish`(完成)
+
+![Alt text]( /image/kali Linux安装/36安装.png)
+
+**一般情况下就会直接进入这个页面然后点击`绿色的三角`就可以启动虚拟机了
+，没有进入虚拟机界面也可以通过右侧导航栏进入然后再点击`绿色的三角`**
+
+![Alt text]( /image/kali Linux安装/37安装.png)
+
+**我们的虚拟机kali Linux就创建好了**
+
+### kali linux虚拟机安装
+
+**创建好系统后就到了真正的系统安装**
+
+安装上述最后一个方法启动虚拟机，就会进入`kali Linux`的引导界面
+
+然后回车，下一个界面选择中文，再下一个界面选择汉语，接下来就保持默认一直下一步即可，
+但是要注意如果默认选择否的都手动换成是即可，剩下的保持默认一直下一步即可安装成功
+
+
+
+
